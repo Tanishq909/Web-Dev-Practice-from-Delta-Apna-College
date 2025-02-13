@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mongo Relationships</title>
+</head>
+<body>
+    <h1><b><u>Relationships</u></b></h1>
+    <h2>SQL (via Foreionst findCustomer = async() => {
+        let result = await Customer.find({}).populate("orders");
+        console.log(result[0]);
+    }
+    
+    findCustomer();gn Keys)</h2>
+    <ul>
+        <li>one to one</li>
+        <li>one to many</li>
+        <li>many to many</li>
+    </ul>
+
+    <h1><b><u>One to Few / Approach 1 (one to few)</u></b></h1>
+    <h2>Store the child document inside parent</h2>
+    <h2>Code in user.js file</h2>
+
+    <h1><u><b>One to Many / Approach 2</b></u></h1>
+    <h2>Store a reference to the child document inside parent (id store karegenge parent mai)</h2>
+    <h2>Code in js file</h2>
+
+    <h1><b><u>One to Many / Approach 3 (one to squillions)</u></b></h1>
+    <h2>Store a reference to the parent document inside child (parent[user ki id] store karegenge child mai)</h2>
+    <h2>Code in js file</h2>
+
+    <h1><u><b><b>Read the 6 rules for Schemas in mongoDB website</b></b></u></h1>
+
+    <h1><b><u>Handling Deletion</u></b></h1>
+    <h2>using Moongoose Middleware </h2>
+
+    <ul><h2>We can use 2 middleware</h2>
+    <li>Pre-run before the query is executed</li>
+    <li>Post-run after the query is executed</li></ul>
+
+    <h1><u><b>New Model : Reviews</b></u></h1>
+    <h2>comment</h2>
+    <h2>rating (1 to 5)</h2>
+    <h2>createdAt</h2>
+
+    <h1><b><u>Deleting Reviews</u></b></h1>
+    <h2>Mongo $pull operator</h2>
+    <h2>It removes from an existing array all instances of a value or values that match a specified condition.</h2>
+    
+    <h1><b><u>Deleting Listing</u></b></h1>
+    <h2>Delete Middleware for Reviews</h2>
+</body>
+</html>

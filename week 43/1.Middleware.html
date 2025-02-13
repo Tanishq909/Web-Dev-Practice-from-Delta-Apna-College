@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Middlewares</title>
+</head>
+<body>
+    <h1><b><u>Middlewares</u></b></h1>
+    <h2>It is an intermediary (links between request and response)</h2>
+
+    <h2><b>in Express</b></h2>
+    <h2>Middleware in Express are functions that come into play after the server receives the request and before the response is sent to the client.</h2>
+
+
+    <h2>app.use(express.urlencoded({extended : true}));</h2>
+    <h2>app.use(express.static(path.join(__dirname,"/public")));</h2>
+
+
+    <h1><b><u>Properties of Middlewares</u></b></h1>
+    <h2>1.It can access both req , res object.</h2>
+    <h2>2.Chaining is possible.</h2>
+    <h2>3.It can send a response.</h2>
+    to group buy?    <h1><u><b>What do middlewares do?</b></u></h1>
+    <ul>
+        <h2>Middleware functions can perform the following tasks:</h2>
+        <li><h2>Execute any code</h2></li>
+        <li><h2>Make changes to the request and the response objects. </h2></li>
+        <li><h2>End the request-response cycle.</h2></li>
+        <li><h2>Call the next middleware function in the stack.</h2></li>
+    </ul>
+
+    <h1><b><u>Our 1st Middleware</u></b></h1>
+    <h2>app.use( middleware )</h2>
+
+    <h1><u><b>Using next()</b></u></h1>
+    <h2>The nextx middleware function is commonly denoted by a variable named next.</h2>
+    <h2>If the current middleware function does not end the request-response cycle, it must call next() to pass control to the next middleware function.</h2>
+
+    <h1><u><b>Creating Utility Middleware</b></u></h1>
+    <h2>Logger -- log karna (useful info ko console ke upar print karna Terminal par)</h2>
+
+    <h1><b><u>app.use Callback</u></b></h1>
+
+    <h1><u><b>API Token as Query String</b></u></h1>
+    <h2><b>Let's create a middleware for an api that checks if the access token was passed in the query string or not.</b></h2>
+
+    <h1><b><u>Handling Errors</u></b></h1>
+    <h2>Express Default Error Handler</h2>
+
+
+    <h1><u><b>Error Class</b></u></h1>
+    <h2>Create an admin route & send an error with a 403 status code.</h2>
+</body>
+</html>
