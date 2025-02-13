@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nodejs</title>
+</head>
+<body>
+    <h1><ul><u><b>Node.js</b></u></h1>
+        <h2>
+            <p>JavaScript Runtime Environment</p>
+            <p>It is used for server side programming.</p>
+            <li>Node.js is not a language, library or framework.</li>
+        </h2>
+    </ul>
+
+    <h1><ul><u><b>Node Installation</b></u></h1>
+        <h2>
+            <li>Download from browser</li>
+            <li>To check node is installed or not : CHECK IN TERMINAL</li>
+            <li>node</li>
+            <li>Welcome to Node.js v18.19.1.</li>
+            <li>node -v</li>
+            <li>v18.19.1</li>
+        </h2>
+    </ul>
+
+    <h1><ul><u><b>Node REPL(Read Evaluate Print Loop)</b></u></h1>
+        <h2>
+            <li>To use Node search node in TERMINAL</li>
+            <li>.help gives us commands</li>
+        </h2>
+    </ul>
+
+    <h1><ul><u><b>Node Files</b></u></h1>
+        <h2>
+            <li>node fileName.js</li>
+            <li>Select that directory and make new file by "touch fileName.js"</li>
+            <li>To run that file on terminal by "node fileName.js"</li>
+        </h2>
+    </ul>
+
+    <h1><ul><u><b>Process</b></u></h1>
+        <h2>
+            <li>process : This object provides information about , and control over , the current Node.js process.</li>
+            <li>process.version</li>
+            <li>process.release</li>
+            <li>process.cwd()</li>
+            <li>process.version</li>
+            <li>process.argv : returns an array containing the command-line arguments passed when the Node.js process was launched.</li>
+            
+        </h2>
+    </ul>
+
+    <h1><ul><u><b>module.exports(requiring files)</b></u></h1>
+        <h2>
+            <li>require() : a built-in function to include external modules that exist in separate files.</li>
+            <li>module.exports : a special object</li>
+        </h2>
+    </ul>
+
+    <h1><ul><u><b>NPM (Node Package Manager)</b></u></h1>
+        <h2>
+            <li>npm is the standard package manager for Node.js</li>
+            <li>1. library of packages</li>
+            <li>2. command line tool</li>
+        </h2>
+    </ul>
+
+    <h1><ul><u><b>Installing Packages</b></u></h1>
+        <h2>
+            <li>npm install <- package name -></li>
+            <li>node_modules : The node_modules folder contains every installed dependency for your project.</li>
+            <li>package-lock.json : It records the exact version of every installed dependency,including its sub-dependencies and their versions.</li>
+            <li>package.json : The package.json file contains descriptive and functional metadata about a project , such as a name,version , and dependencies.</li>
+            <li>npm init</li>
+        </h2>
+    </ul>
+    
+    <h1><ul><u><b>Local v/s Global</b></u></h1>
+        <h2>
+            <li>Local</li>
+            <li>npm install <- package name -></li>
+            <li>Global</li>
+            <li>npm install -g <- package name -></li>
+            <li>npm link -g <- package name -></li>
+            <li>We use only locally packages</li>
+        </h2>
+    </ul>
+
+    <h1><ul><u><b>require v/s import</b></u></h1>
+        <h2>
+            <li>import { sum } from "./math.js"</li>
+            <li>We can't selectively load only the pieces we need with require but with import,we can selectively load only the pieces we need , which can save memory.</li>
+            <li>Loading is synchronous for 'require' but can be asynchronous for 'import'.</li>
+        </h2>
+    </ul>
+</body>
+</html>

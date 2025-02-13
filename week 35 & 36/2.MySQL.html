@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detailed Explanation of MySQL</title>
+</head>
+<body>
+    <h1><u><b>Create Table</b></u></h1>
+    <h2>
+        CREATE TABLE table_name (             <br>
+            column_name1 datatype constraint, <br>
+            column_name2 datatype constraint, <br>
+            column_name3 datatype constraint, <br>
+        )                                     <br>
+    </h2>
+
+    <h1><u><b>Data Types</b></u></h1>
+    <img src="Data-Types.png">
+    <br>
+
+    <h1><u><b>constraints</b></u></h1>
+    <h2>Rules for data in the table</h2>
+    <h2>NOT NULL ------ columns cannot have a null value</h2>
+    <h2>UNIQUE ------ all values in column are different</h2>
+    <h2>DEFAULT ------ set the default value of a column</h2>
+    <h2>CHECK ------ it can limit the values allowed in a column</h2>
+    <img src="Contraints.png" style="height: 400px; width: 800px;">
+
+    <h1><b><u>What are Keys?</u></b></h1>
+    <h2>Keys are special columns in the table</h2>
+    <h1>Primary Key</h1>
+    <h2>It is a column (or set of columns) in a table that uniquely identifies each row. (a unique id)</h2>
+    <h2>There is only 1 PK & it should be NOT null.</h2>
+
+    <h1>Foreign Key</h1>
+    <h2>A foreign key is a column (or set of columns) in a table that refers to the primary key ir</h2>
+    <h2>FKs can have duplicate & null values.</h2>
+    <h2>There can be multiple FKs.</h2>
+
+    <h1><u><b>INSERT into Table</b></u></h1>
+    <h2>
+        INSERT INTO table_name    <br>
+        (colname1,colname2);      <br>
+        values                    <br>
+        (col1_v1,col2_v1),        <br>
+        (col1_v2,col2_v2);        <br>
+    </h2> 
+
+    <h1><u><b>Select Command</b></u></h1>
+    <h2>Selects & Show data from the DB</h2>
+    <br>
+    <h2><i>Syntax</i></h2>
+    <h2>SELECT col1,col2 FROM table_name;</h2>
+    <br>
+    <h2><i>Syntax (to show all)</i></h2>
+    <h2>SELECT * FROM table_name;</h2>
+    <br>
+    
+    
+</body>
+</html>

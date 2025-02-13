@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1><ul><u><b>REST</b></u></h1>
+    <h2><b>Representational State Transfer </b></h2>
+    <h2>REST is an architectural style that defines a set of constraints to be used for creating web series.</h2>
+    <h2>RESTful APIs</h2>
+    <h2>CRUD (DataBase)</h2>
+    <ul><h2>CRUD
+        <li>Create</li>
+        <li>Read</li>
+        <li>Update</li>
+        <li>Delete</li></h2>
+    </ul>
+    <h2>Use nouns instead of verbs in endpoint paths</h2>
+
+    <h1><ul><u><b>CRUD Operations</b></u></h1>
+    <h2>GET retrieves resources.</h2>
+    <h2>POST submits new data to the server</h2>
+    <h2>PUT updates existing data</h2>
+    <h2>PATCH update existing data partially</h2>
+    <h2>DELETE removes data</h2>
+
+    <h1><ul><u><b>Quora Posts (Project)</b></u></h1>
+    <h2>post --> username,content</h2>
+    <ul><h2>
+        <li>VIEW</li>
+        <li>individual</li>
+        <li>Edit</li>
+        <li>Delete</li>
+    </h2></ul>
+       
+    <h1><ul><u><b>Creating RESTful APIs</b></u></h1>
+    <h2>GET  ----------------/posts -----to get data for all posts ------- INDEX(main)</h2>
+    <h2>POST ----------------/posts -----to add a new post --------------- CREATE</h2>
+    <h2>GET  ----------------/posts:id --to get one post(using id) --------VIEW</h2>
+    <h2>PATCH ---------------/posts:id --to update specific post ----------UPDATE</h2>
+    <h2>DELETE --------------/posts:id --to delete specific post ----------DESTROY</h2>
+    
+    <h1><ul><u><b>Implement : GET /posts</b></u></h1>
+    <h2>Index Route</h2>
+    <h2>GET  ----------------/posts -----to get data for all posts ------- INDEX(main)</h2>
+
+    <h1><ul><u><b>Implement : POST /posts</b></u></h1>
+    <h2>Create Route</h2>
+    <h2>POST ----------------/posts -----to add a new post --------------- CREATE</h2>
+    <h2>2 routes</h2>
+    <h2>Serve the form -----------------GET ------/posts/new</h2>
+    <h2>Add the new post ---------------POST -----/posts</h2>
+
+    <h1><ul><u><b>Redirect</b></u></h1>
+    <h2>res.redirect( URL )</h2>
+
+    <h1><ul><u><b>Implement : GET /posts/:id</b></u></h1>
+    <h2>Show Route</h2>
+    <h2>GET  ----------------/posts:id --to get one post(using id) --------VIEW</h2>
+
+    <h1><ul><u><b>Create id for Posts</b></u></h1>
+    <h2>UUID Package</h2>
+    <h2>Universally unique identifier</h2>
+    <h2>npm install uuid  </h2>
+
+    <h1><ul><u><b>Create form for Update</b></u></h1>
+    <h2>Edit Route</h2>
+    <h2>GET  ----------------/posts:id/edit --Serve the edit form --------EDIT</h2>
+</body>
+</html>

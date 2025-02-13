@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MongoDB</title>
+</head>
+<body>
+    <h1><u><b>The Shell</b></u></h1>
+    <h2>mongosh   //to start</h2>
+    <h2>use college //to create & use a new database called "college"</h2>
+
+    <h1><u><b>How we store data_ (BSON)</b></u></h1>
+    <h1>BSON Data</h1>
+    <h2>Binary JSON</h2>
+
+    <h1><b><u>JSON v/s BSON</u></b></h1>
+    <h2>JSON Is</h2>
+    <h2>1) text based</h2>
+    <h2>2) space inefficient</h2>
+    <h2>We will give JSON data(JS object) in MongoDB </h2>
+    <h2>But it is stored in BSON form (machine understand only)</h2>
+
+    <h1><u><b>Some Basic Terms</b></u></h1>
+    <h2>Document : Mongo stores data in form of document (BSON docs)</h2>
+    <h2>Collection : MongoDB stores documents in collection. </h2>
+
+    <h1><b><u>INSERT in DB</u></b></h1>
+    <h2>insertOne</h2>
+    <h2>db.collection.insertOne() --- Insert a single document into a collection.</h2>
+    <h2>show collections</h2>
+    <h2>db.student.insertOne({name:"adam",marks:79})</h2>
+    <h2>db.student.find()</h2>
+    <h2>If a collection does not exist, MongoDB creates the collection when ypu first store data for that collection.</h2>
+
+    <h2>insertMany (array of documents)</h2>
+    <h2>db.student.insertMany() --- Insert multiple documents into a collection.</h2>
+    <h2>db.student.insertMany([{name:"bob",marks:65},{name:"eve",city:"Delhi"}])</h2>
+
+    <h1><b><u>FIND in DB</u></b></h1>
+    <h2>db.collection.find()  //returns everything</h2>
+    <h2><b>for specific queries</b></h2>
+    <h2>db.collection.find({key:value})</h2>
+    <h2>db.collection.findOne({key:value})</h2>
+    <h2><b>Learn it</b></h2>
+    <h2>find() --- cursor - reference to original</h2>
+    <h2>findOne() --- actual document</h2>
+
+    <h1><b><u>Query Operators</u></b></h1>
+    <h2><b>Q. Find students where marks > 75</b></h2>
+    <h2>db.student.find({marks: {$gt: 75}})</h2>
+    <h2><b>Q. Find students who live in Delhi or Mumbai</b></h2>
+    <h2>db.student.find({city: {$in: ["Delhi","Mumbai"]}})</h2>
+    <h2><b>Q. Find students who scored > 75 or live in Delhi</b></h2>
+    <h2>db.student.find( {$or: [ {marks: {$gt:75}},{city: "Delhi"}]} )</h2>
+
+
+    <h1><b><u>UPDATE in DB</u></b></h1>
+    <h2>updateOne</h2>
+    <h2>db.collection.updateOne() --- Updates at most a single document that match a specified filter even though multiple documents may match the specified filter.</h2>
+    <h2>db.collection.updateOne("<filter>,<update>,<options>")</h2>
+
+    <h2><b>Update Operators</b></h2>
+    <h3>$addFields</h3>
+    <h3>$set</h3>
+    <h3>$project</h3>
+    <h3>$unset</h3>
+    <h3>$replaceRoot</h3>
+    <h3>$replaceWith</h3>
+
+    <h2>DELETE in DB</h2>
+    <h2>deleteOne</h2>
+    <h2>db.collection.deleteOne("<filter>,<options>")</h2>
+    <h2>db.collection.deleteMany("<filter>,<options>")</h2>
+    <h2><b>Delete data </b></h2>
+    <h2>db.collection.deleteMany( {} )</h2>
+    <h2><b>Drop database</b></h2>
+    <h2>db.dropDatabase()</h2>
+</body>
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Templating</title>
+</head>
+<body>
+    <h1><ul><u><b>Templating</b></u></h1>
+    <h1><ul><b><u>EJS (Embedded JavaScript templates)</u></b></ul></h1>
+    <h2>EJS is a simple templating language that lets you generate HTML markup with plain JavaScript.</h2>
+
+    <h1><ul><u><b>Using EJS</b></u></h1>
+    <h2>app.set("view engine","ejs");</h2>
+    <h2>app.get("/",(req,res) => {                    <br>
+        res.render("home.ejs")                        <br>
+    })                                                <br>
+    </h2>
+
+    <h1><ul><u><b>Views Directory</b></u></h1>          
+    <h2>const path = require("path");                 <br>
+        app.set("views",path.join(__dirname,"views"));<br>
+    </h2>                                             <br>
+
+    <h1><ul><u><b>Interpolation Syntax</b></u></h1>
+    <h2>Interpolation refers to embedding expressions into marked up text.</h2>
+    <h2>"<%=  %>"- Outputs the value into the template (HTML escaped)</h2>
+    <h2>It converts HTML into dynamic HTML , JavaScript is used in it</h2>
+
+    <h1><ul><u><b>Instagram EJS</b></u></h1>
+    <h2>Create a basic template for instagram page based on following route:</h2>
+    <h2>/ig/:username</h2>
+
+    <h1><ul><u><b>Conditional Statements in EJS</b></u></h1>
+    <h2>Adding conditions inside EJS</h2>
+    <h2> "Use of <%  %>"</h2>
+    <h2>Use of JavaScript in EJS</h2>
+    <h2> <% use for control flow %> </h2>
+
+    <h1><ul><u><b>Instagram page with EJS</b></u></h1>
+    <h2>const instaData = require(".data.json")</h2>
+
+    <h1><ul><u><b>Includes</b></u></h1>
+    <H2>Inserting subtemplate</H2>
+    <h2><%- include("include/head.ejs") %></h2>
+
+    <h1><ul><u><b>Serving Static Files</b></u></h1>
+    <h2>app.use(express.static(folder_name))</h2>
+    <h2>app.use(express.static(path.join(__dirname,"public")))</h2>
+    <h2>public folders serve karta hai files through ejs </h2>
+</body>
+</html>

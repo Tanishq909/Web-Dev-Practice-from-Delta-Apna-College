@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Express</title>
+</head>
+<body>
+    <h1><ul><u><b>Library vs Framework</b></u></h1>
+        <h2>
+            <li>Express</li>
+            <li>A Node.js web application framework that helps us to make web applications. </li>
+            <li>It is used for server side programming.</li>
+            <li>1. listen for incoming request.</li>
+            <li>2. parse</li>
+            <li>3. match response with routes</li>
+            <li>4. response</li>
+        </h2>
+    </ul>
+    <h1><ul><u><b>Getting Started with Express</b></u></h1>
+        <h2>
+            const express = require("express");                  <br>
+            const app = express();                               <br>
+                                                                 <br>
+            let port = 3000;  //8080                             <br>
+                                                                 <br>
+            app.listen(port,() => {                              <br>
+                console.log(`app is listening on port ${port}`); <br>
+            })                                                   <br>
+        </h2>
+
+    <h1><ul><u><b>Ports</b></u></h1>
+    <h2>Ports are the logical endpoints of a network connection that is used to exchange information between a web seever and a web client.</h2>
+    
+    <h1><ul><u><b>Handling requests</b></u></h1>
+    <h2>
+        app.use((req,res) => {                                   <br>
+        console.log("request received");                         <br>
+        });                                                      <br>
+    </h2>
+
+    <h1><ul><u><b>Sending a Response</b></u></h1>
+    <h2>request(req) parse the text based into object .</h2>
+    <h2>response(res) parse the data into JSON application format.</h2>
+
+    <h1><ul><u><b>Routing</b></u></h1>
+    <h2>It is process of selecting a path for traffic in a network or between or across multiple networks.</h2>
+
+    <h1><ul><u><b>Nodemon</b></u></h1>
+    <h2>To automatically restart server with code changes</h2>
+    <h2>Installed nodemon globally through terminal</h2>
+
+    <h1><ul><u><b>Path Parameters</b></u></h1>
+    <h2>req.paras</h2>
+
+    <h1><ul><u><b>Query Strings</b></u></h1>
+    <h2>req.query</h2>
+</body>
+</html>
