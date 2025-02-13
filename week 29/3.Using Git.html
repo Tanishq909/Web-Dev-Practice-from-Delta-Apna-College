@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Using Git</title>
+</head>
+<body>
+    <h1><ul><u><b>Using Git</b></u></h1>
+        <h2>
+            <li>Command Line (Most Popular)</li>
+            <li>IDE / Code Editors (like VSCode)</li>
+            <li>Graphical User Interface (like GitKraken)</li>
+            <li>To check version (Terminal par) : git --version</li>
+        </h2>
+    </ul>
+    
+    <h1><ul><u><b>Configuring Git</b></u></h1>
+        <h2>
+            <li>git config --global user.name "My Name"</li>
+            <li>git config --global user.email "someone@gmail.com"</li>
+        </h2>
+    </ul>
+    
+    <h1><ul><u><b>Basic Commands</b></u></h1>
+        <h2>
+            <li>Clone - Cloning a repository on our local machine ----------git clone <-some link -></li>
+            <li>status - displays the state of the code ----------- git status</li>
+        </h2>
+    </ul>
+
+    <h1><ul><u><b>Add & Commit Changes</b></u></h1>
+        <h2>
+            <li>add - adds new or changed files in your working directory to the Git staging area.</li>
+            <li>git add <- file name -></li>
+            <li>git add . --> for all files </li>
+            <li>commit-it is the record of change  ----------- git commit -m "some message"</li>
+            <li>push- upload local repo content to remote repo  ------------ git push origin mai</li>
+        </h2>
+    </ul>
+
+    <h1><ul><u><b>Basic Commands</b></u></h1>
+        <h2>
+            <li>init - used to create a new git repo. ------------ git init</li>
+        </h2>
+    </ul>
+
+    <h1><ul><u><b>How to add a new vs code file to github (Pushing Local repo) </b></u></h1>
+        <h2>
+            <li>First select file and make it into git repo</li>
+            <li>init - used to create a new git repo. ------------ git init</li>
+            <li>then add and commit changes</li>
+            <li>git remote add origin <- link(new github repo link)-></li>
+            <li>git remote -v (to verify remote)</li>
+            <li>git branch (to check branch)</li>
+            <li>git branch -M main (to rename branch)</li>
+            <li>git push origin main</li>
+        </h2>
+    </ul>
+    
+    <h1><ul><u><b>Shortcut of git push</b></u></h1>
+        <h2>
+            <li>git push -u origin main</li>
+            <li>iske baad "git push" use hoga only </li>
+        </h2>
+    </ul>
+
+    <h1><ul><u><b>Shortcut of add & commit in one code</b></u></h1>
+        <h2>
+            <li>git commit -am ""</li>
+            <li>iske baad "git push" use hoga only </li>
+        </h2>
+    </ul>
+    
+    <h1><ul><u><b>See Workflow from video</b></u></h1>
+        <h2>
+            <li>Github : code changes -> commit</li>
+            <li>Local Git : code changes -> add(stage change) -> commit(commit changes) -> push</li>
+        </h2>
+    </ul>
+    
+    <h1><ul><u><b>Branch Commands</b></u></h1>
+        <h2>
+            <li>git branch ------------------------------------------------ (to check branch)</li>
+            <li>git branch -M main -------------------------------------(to rename branch)</li>
+            <li>git checkout <- branch name -> --------------------- (to navigate) </li> 
+            <li>git checkout -b <- new branch name ->-------------(to create new branch)</li>
+            <li>git branch -d <- branch name ->---------------------(to delete branch) </li>
+        </h2>
+    </ul>
+
+    <h1>New branch ko push karna hota hai github mai</h1>
+    <h2>git push --set-upstream origin feature</h2>
+
+    <h1><ul><u><b>Merging Code from different Branches</b></u></h1>
+        <h2>
+            <li>git diff <- branch name ->-------------------------------------- (to compare commits,branches,files & more)</li>
+            <li>git merge <- branch name -> -------------------------------------(to merge 2 branches)</li>
+            <h2>OR</h2>
+            <h2><li>Create a PR</li></h2>
+        </h2>
+    </ul>
+
+    <h1><ul><u><b>Pull Request</b></u></h1>
+        <h2>
+            <li>It tells you tell others about changes you've pushed to a branch in a repository on Github.</li>
+        </h2>
+    </ul>
+    
+    <h1><ul><u><b>Github to vscode</b></u></h1>
+        <h2>
+            <li>git pull origin main</li>
+            <li>used to fetch and download content from a remote repo and immediately update the local repo to match that content.</li>
+        </h2>
+    </ul>
+    
+    <h1><ul><u><b>Merge Conflicts</b></u></h1>
+        <h2>
+            <li>An event that takes place when Git is unable to automatically resolve differences in code between two commits.</li>
+        </h2>
+    </ul>
+    
+    <h1><ul><u><b>Fixing Mistakes</b></u></h1>
+            <h2><li>
+                Case 1:staged changes</h2>
+                <h2>git reset <- file name -></h2>
+                <h2>git reset</h2>
+            </li>
+            <h2><li>
+                Case 2:commited changes (for one commit)</h2>
+                <h2>git reset HEAD~1</h2>
+            </li>
+            <h2><li>
+                Case 3:commited changes (for many commits)</h2>
+                <h2>git reset <- commit hash -></h2>
+                <h2>git reset --hard <- commit hash -></h2>
+            </li>
+    </ul>
+
+    
+    <h1>To see all commits ------------> git log</h1>
+
+
+    <h1><ul><u><b>What is Forking ?</b></u></h1>
+        <h2>
+            <li>A fork is a new repository that shares code and visibility settings with the original "upstream" repository.</li>
+            <li>Fork is a rough copy.</li>
+        </h2>
+    </ul>
+</body>
+</html>
