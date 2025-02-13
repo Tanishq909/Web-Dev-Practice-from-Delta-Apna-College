@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1><u><b>Let's understand</b></u></h1>
+    <h1>Authentication</h1>
+    <h2>Authentication is the process of verifying who someone is</h2>\
+
+    <h1>Authorization</h1>
+    <h2>Authorization is the process of verifying what specific applications,files, and data a user has access to  </h2>
+
+    <h1><u><b>Storing Passwords</b></u></h1>
+    <h2>We never store the passwords as it is.We store their hashed form.</h2>
+    <h2>Hashing Function</h2>
+
+
+    <h1><b><u>Hashing</u></b></h1>
+    <h2>For every input, there is a fixed output.</h2>
+    <h2>They are one-way functions,we can't get input from output</h2>
+    <h2>For a different input, there is a different output but of same length </h2>
+    <h2>Small changes in input should bring large changes in output.</h2>
+    <h2><b>Examples of hashing functions : SHA256,MD5,CRC,bcrypt</b></h2>
+
+    <h1><b><u>Salting</u></b></h1>
+    <h2>Password salting is a technique to protect passwords stored in databases by adding a string of 32 or more characters and then hashing them.</h2>
+
+    <h1><b><u>Passport</u></b></h1>
+    <h2>Passport is express authication middleware for nodejs</h2>
+    <h2>npm i passport</h2>
+    <h2>npm i passport-local</h2>
+    <h2>npm i passport-local-mongoose</h2>
+
+    <h1><b><u>Configuring Strategy</u></b></h1>
+    <h2><b>passport.initialize()</b></h2>
+    <h2>A middleware that initializes passport.</h2>
+    <h2><b>passport.session()</b></h2>'
+    <h2>passport.use(new LocalStrategy(User.authenticate() ))</h2>
+
+
+    <h1><b><u>Signup User</u></b></h1>
+    <h2>GET /signup</h2>
+    <h2>POST /signup</h2>
+
+    <h1><u><b>Login User</b></u></h1>
+    <h2>GET /login</h2>
+    <h2>POST /login</h2>
+</body>
+</html>
