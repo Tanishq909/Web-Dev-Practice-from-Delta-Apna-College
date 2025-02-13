@@ -1,0 +1,5 @@
+HTML 
+paragraph tags <p> </p>
+spaces are not allocated inside one tag
+
+use of another tag inside the one tag ----- Nesting ----Nested tags

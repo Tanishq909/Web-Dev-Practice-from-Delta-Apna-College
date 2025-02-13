@@ -1,0 +1,15 @@
+div {
+    height: 200px;
+    width: 200px;
+    background-color: rgba(255, 0, 0, 0.507);
+    /* OR  background-color: #ff0000ff; */
+    /* a in 'rgba' means alpha */
+}
+
+#opacity {
+    background-color: #ffa511;
+    opacity: 0;
+}
+
+
+
