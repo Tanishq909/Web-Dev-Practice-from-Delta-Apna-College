@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Higher Order Functions</title>
+</head>
+<body>
+    <h1><i><b>Higher Order Functions</b></i></h1>
+    <h2><b>A function that does one or both :                     <br>
+        * takes one or multiple functions as arguments.           <br>
+        * returns a function.                                     <br>
+    </b></h2>
+    <h2>Takes one or multiple functions as arguments.</h2>
+
+    <h1>Example 1: Multiple Greet Function</h1>
+    <h2>
+        In the first example, we are dealing with a function named multipleGreet that takes two parameters: a function func and a number n. The purpose of multipleGreet is to execute the function func exactly n times. <br>
+                                                                                                                                                                                                                          <br>
+        Here's a step-by-step breakdown:                                                                                                                                                                                  <br>
+                                                                                                                                                                                                                          <br>
+        Definition of multipleGreet: This function iterates from 1 to n (inclusive) and calls the function func during each iteration.                                                                                    <br>
+        Definition of greet: This is a simple function that logs "hello" to the console.                                                                                                                                  <br>
+        Invocation of multipleGreet: We call multipleGreet with the greet function and the number 1234. As a result, "hello" will be printed to the console 1234 times.                                                   <br>
+        This example illustrates how functions can be passed as arguments to other functions and be executed multiple times based on a given condition.                                                                   <br>
+        
+
+
+    <h1>Example 2: Odd or Even Factory</h1>
+    <h2>The second example showcases a function called oddOrEvenFactory that returns different functions based on the input request. It demonstrates the concept of a higher-order function, which returns other functions based on specific conditions.<br>
+                                                                                                                                                                                                                                                        <br>
+        Here's a detailed explanation:                                                                                                                                                                                                                  <br>
+                                                                                                                                                                                                                                                        <br>
+        Definition of oddOrEvenFactory: This function takes a single parameter, request. Depending on whether request is "odd" or "even", it returns a function that checks if a given number n is odd or even.                                         <br>
+        If request is "odd", it returns a function that logs true if n is odd and false otherwise.                                                                                                                                                      <br>
+        If request is "even", it returns a function that logs true if n is even and false otherwise.                                                                                                                                                    <br>
+        If request is neither "odd" nor "even", it logs "wrong request".                                                                                                                                                                                <br>
+        Invocation of oddOrEvenFactory: We pass the string "odd" to oddOrEvenFactory. The returned function is not immediately invoked with a number, but we print the function itself to the console.                                                  <br>
+        This example highlights how we can create and return functions dynamically based on input parameters, a powerful feature in JavaScript that enables higher-order programming and functional design patterns.                                    <br></h2>
+    </h2>
+    
+
+<script src="14.app.js"></script>
+</body>
+</html>

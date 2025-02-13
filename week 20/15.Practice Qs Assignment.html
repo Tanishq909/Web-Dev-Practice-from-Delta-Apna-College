@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS (Part-7) Practice Solutions</title>
+</head>
+<body>
+    <h1><b><i><u>Question 1</u></i></b></h1>
+<h2>Qs1. Write an arrow function named arrayAverage that accepts an array of numbers and returns the average of those numbers.</h2>
+
+<br><br>
+
+<h1><b><i><u>Question 2</u></i></b></h1>
+<h2>Qs2. Write an arrow function named isEven() that takes a single number as argument and returns if it is even or not. </h2>
+
+<br><br>
+
+<h1><b><i><u>Question 3</u></i></b></h1>
+<h2>Qs3. What is the output of the following code :  <br>
+    const object = {                                 <br>
+        message : 'Hello, World!',                   <br>
+                                                     <br>
+        logMessage() {                               <br>
+            console.log(this.message);               <br>
+        }                                            <br>
+    }                                                <br>
+    setTimeout(object.logMessage(),1000);            <br>
+</h2>
+
+<br><br>
+
+
+<h1><b><i><u>Question 4</u></i></b></h1>
+<h2>Qs4. What is the output of the following code :     <br>
+    let length = 4;                                     <br>     
+function callback() {                                   <br>
+    console.log(this.length);                           <br>
+}                                                       <br>
+                                                        <br>
+const object1 = {                                       <br>
+    length : 5,                                         <br>
+    method(callback) {                                  <br>
+        callback();                                     <br>
+    }                                                   <br>
+};                                                      <br>
+                                                        <br>
+object1.method(callback , 1 , 2);                       <br>s
+</h2>                                                   <br>
+
+<br><br>
+
+<script src="16.app.js"></script>
+</body>
+</html>

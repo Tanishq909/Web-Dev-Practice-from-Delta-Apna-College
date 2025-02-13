@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>How to use JS in website</title>
+</head>
+<body>
+    <h1>Selecting Elements</h1>
+    <h2>getElementById</h2>
+    <h2>Returns the Element as an object or null (if not found).</h2>
+
+    <h1>getElementByClassName</h1>
+    <h2>Returns the Elements as an HTML Collection (arrays of objects) or empty collection(if not found).</h2>
+
+    <h1>getElementByTagName</h1>
+    <h2>Returns the Elements as an HTML Collection (arrays of objects) or empty collection(if not found).</h2>
+
+    <h1>Query Selectors</h1>
+    <h2>Allows us to use any CSS selector</h2>
+    <h2>
+document.querySelector('p');                               //Selects first p element                           <br>
+document.querySelector('myId');                            //Selects first element with id = myId              <br>
+document.querySelector('.myclass');                        //Selects first element with class = myClass        <br>
+document.querySelector('.className:nth-of-type(n+1)');     //Selects alternative element with class = myClass  <br>
+document.querySelectorAll("p");                            //Selects all p elements                            <br>
+    </h2>
+ 
+    <h1><b><i><u><h1>Using Properties & Methods</u></i></b></h1></h1>
+    <h1>1.innerText</h1>
+    <h2>Shows the visible text contained in a node.</h2>
+    <h1>2.textContent</h1>
+    <h2>Shows all the full text (hidden)</h2>
+    <h1>3.innerHTML</h1>
+    <h2>Shows the ful markup</h2>
+
+    <h1>Manipulating Attributes</h1>
+    <h2>getters and setters</h2>
+    <h2>Object.getAttribute(attr);                       //getter                  <br>
+        Object.setAttribute(attr,val);                   //setter                  <br>
+    </h2>
+
+    <h1>Manipulating Style</h1>
+    <h2>style Property</h2>
+    <h2>Object.style</h2>
+
+    <h1>using classList</h1>
+    <h2>Object.classList</h2>
+    <h2>classList.add() to add new classes</h2>
+    <h2>classList.remove() to remove classes</h2>
+    <h2>classList.contains() to check if class exists</h2>
+    <h2>classList.toggle() to toggle between add & remove</h2>
+
+    <h1>Navigation</h1>
+    <h2>parentElement</h2>
+    <h2>children</h2>
+    <h2>previousElementSibling / nextElementSibling</h2>
+
+    <h1>Adding Elements</h1>
+    <h2>document.createElement('p')</h2>
+    <h2>*appendChild(element)</h2>
+    <h2>*append(element)</h2>
+    <h2>*prepend(element)</h2>
+    <h2>*insertAdjacent(where,element)</h2>
+
+    <h1>Removing Elements</h1>
+    <h2>* removeChild(element)</h2>
+    <h2>* remove(element)</h2>
+
+<script src="7.app.js"></script>
+</body>
+</html>

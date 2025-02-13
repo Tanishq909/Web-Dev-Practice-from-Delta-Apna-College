@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practice Qs</title>
+</head>
+<body>
+    <h1><b><i><u>Question 1</u></i></b></h1>
+    <h2>Qs1.What will be the output.</h2>
+    <h2>
+        let greet = "hello";                   //Global Scope <br>
+                                                              <br>
+        function changeGreet() {                              <br>
+            let greet = "namaste";             //Function Scope<br>
+            console.log(greet);                                <br>
+            function innerGreet() {                            <br>
+                console.log(greet);            //Lexical Scope<br>
+            }                                                  <br>
+        }                                                      <br>
+                                                               <br>
+        console.log(greet);                                    <br>  
+        changeGreet();</h2>                                    <br>
+
+<script src="10.app.js"></script>
+</body>
+</html>

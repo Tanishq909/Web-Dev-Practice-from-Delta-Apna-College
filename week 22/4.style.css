@@ -1,0 +1,41 @@
+body {
+    font-family: arial;
+}
+
+.green {
+    color: green;
+} 
+
+.underline {
+    text-decoration: underline purple wavy;
+}
+
+
+#mainImg {
+    width: 35%;
+}
+
+.box {
+    background-color: lightgrey;
+    border: 0.25px solid black;
+    width: 200px;
+    padding: 1rem;
+}
+
+.yellowBg {
+    background-color: yellow;
+}
+
+.boxLink {
+    text-decoration: none;
+}
+
+.oldImg {
+    height: 200px;
+    width: 200px;
+    margin-right: 1rem;
+}
+
+#description {
+    background-color: antiquewhite;
+}
